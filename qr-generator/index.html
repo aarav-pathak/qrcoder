@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Link to QR Code</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1 class="title">Link to QR Code</h1>
+    <input id="urlInput" class="url-input" type="text" inputmode="url" placeholder="Paste your link here" autocomplete="off">
+    <button id="generateBtn" class="btn btn-primary">Generate QR</button>
+    <div id="qrContainer" class="qr-container"></div>
+    <button id="downloadBtn" class="btn btn-outline">Download PNG</button>
+    <p id="message" class="message"></p>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
